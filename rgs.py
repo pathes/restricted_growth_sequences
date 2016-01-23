@@ -3,7 +3,7 @@
 import sys
 
 def next_rgs(seq, n, k):
-    """Gets next restricted-growth sequence with values in {0..(k-1)}"""
+    """Gets next restricted-growth sequence with values in {0..k}"""
     # b[i] = max(seq[i - 1], b[0], ..., b[i - 1]) = max(seq[i - 1], b[i - 1])
     # All restricted growth sequences start with 0
     b = [0]
