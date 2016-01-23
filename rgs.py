@@ -7,7 +7,6 @@ def next_rgs(seq, n, k):
     # b[i] = max(seq[i - 1], b[0], ..., b[i - 1]) = max(seq[i - 1], b[i - 1])
     # All restricted growth sequences start with 0
     b = [0]
-    # print(seq)
     result = seq[:]
     for i in range(1, n):
         b.append(max(seq[i - 1], b[i - 1]))
